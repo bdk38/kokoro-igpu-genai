@@ -34,6 +34,7 @@ pip install -r requirements.txt
 ```bash
 python scripts/kokoro_server.py --host 0.0.0.0 --port 8880
 # KOKORO_BACKEND=ovgenai-gpu
+# proof of offload: watch intel_gpu_top — Render/3D busy during synthesis
 ```
 
 No GPU?
@@ -60,6 +61,22 @@ curl -sS -X POST http://127.0.0.1:8880/v1/audio/speech \
 ```
 
 Deploy tip: `KOKORO_TTS_CACHE=1` and chunk-shaped `KOKORO_WARM_TEXT='phrase one|phrase two'`.
+
+---
+
+## Open WebUI
+
+Admin → Settings → Audio → OpenAI-compatible:
+
+- Base URL: `http://<host>:8880/v1`
+- Model: `kokoro` · Voice: `af_bella`
+- Response splitting: **Paragraphs** or **None** recommended — the
+  novel-shape first hit (see Performance honesty) can make
+  **Punctuation** splitting look like skipped sentences while a
+  fresh shape compiles. Warmed/cached traffic is fine on any mode.
+
+Deploy: `KOKORO_TTS_CACHE=1` + chunk-shaped `KOKORO_WARM_TEXT`
+pinned in the unit/env file retires the tax for repeat phrasing.
 
 ---
 
