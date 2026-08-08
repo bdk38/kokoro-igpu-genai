@@ -1,0 +1,12 @@
+# Informative lock snapshot after I0 convergence (notes/59) — 2026-08-08
+# Prefer pip install -r requirements.txt on a fresh venv.
+fastapi==0.141.1
+numpy==2.4.6
+onnx==1.22.0
+onnxruntime-openvino==1.24.1
+openvino==2026.3.0
+openvino-genai==2026.3.0.0
+openvino-telemetry==2025.2.0
+openvino-tokenizers==2026.3.0.0
+phonemizer==3.4.0
+uvicorn==0.52.1

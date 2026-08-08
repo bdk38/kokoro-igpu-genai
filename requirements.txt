@@ -1,0 +1,15 @@
+# Product install (PoC + Prototype) — Ubuntu 24.04 / Python 3.12
+# Single venv: OpenVINO 2026.3 + GenAI. ov-gpu patched speaks on this pin (notes/71).
+# Historical PoC lab pin: reproduce/2026.2.1/
+# Repo code default backend: ort-cpu (PoC). Prototype: KOKORO_BACKEND=ovgenai-gpu
+openvino==2026.3.0
+openvino-genai==2026.3.0.0
+onnxruntime-openvino==1.24.1
+numpy>=2.4
+onnx>=1.16
+
+# Real-text phonemization + API server
+phonemizer==3.4.0
+fastapi>=0.115
+uvicorn>=0.30
+soundfile>=0.12

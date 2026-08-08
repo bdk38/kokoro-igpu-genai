@@ -1,0 +1,21 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+cache/
+logs/
+.env
+.env.*
+*.pem
+.DS_Store
+.idea/
+.vscode/
+
+# Model weights — fetch via scripts/fetch_pack.sh
+models/kokoro-82M-int8-ov/**
+!models/kokoro-82M-int8-ov/SHIP_PACK_IDENTITY.txt
+!models/kokoro-82M-int8-ov/.gitkeep
+
+*.log
+!artifacts/**/*.wav

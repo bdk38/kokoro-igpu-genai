@@ -1,0 +1,6 @@
+model=OpenVINO/kokoro-82M-int8-ov
+promoted=2026-08-08
+source_was=spike/ov263-genai/out/kokoro-82M-int8-ov
+openvino_model.bin.sha256=c879cdd88275b9bfa25e51204d969013d701ea8699e15f99fd1957caf75a29ab
+openvino_model.xml.sha256=a04d5d91e8d6f8d8c1ade28ad331b65827aa148e65515acb4c6725f876257fa5
+voices=54
