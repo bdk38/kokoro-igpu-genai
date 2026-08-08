@@ -21,3 +21,13 @@ This appliance was **seeded by copy** from the monorepo shelf, not by history re
 | PoC ship / R0 | notes/71–72, tag `poc-complete` | ONNX-era product complete |
 
 Process / dual-product workflow: monorepo `WORKFLOW.md`.
+
+## Close-out
+
+| Doc (on shelf unless noted) | Role |
+|-----------------------------|------|
+| Fable note_36 | Architect close-out — board terminal |
+| notes/77 | Orchestrator close-out + R2 smoke |
+| notes/76 | Filings PARKED |
+| This repo CONTRIBUTORS.md | Credit model (Fable + Grok + bdk38) |
+
